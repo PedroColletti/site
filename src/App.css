@@ -294,14 +294,9 @@ body {
 
 
 .logoFinal {
-  height: 2em;
+  height: 30px;
   margin-right: 1%;
 }
-
-.logoFinal:hover {
-  transform: scale(1.4);
-  transition: 300ms;
-} 
 
 .colorsTheme {
   background:  #242424 ;
