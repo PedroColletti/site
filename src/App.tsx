@@ -1,16 +1,16 @@
 import { useState } from "react";
-import css3Logo from "./images/css3.svg";
-import emailLogo from "./images/email.svg";
-import html5Logo from "./images/html5.svg";
-import javaScriptLogo from "./images/javaScript.svg";
-import nodeLogo from "./images/node.svg";
-import reactjsLogo from "./images/reactjs.svg";
-import gitLogo from "./images/gitHub.svg";
-import skills from "./images/skills.svg";
-import devFull from "./images/devFull.svg";
-import linkedinLogo from "./images/linkedin.svg";
-import arrowTop from "./images/arrowTop.svg";
-import prevtempo from "./images/prevtempo.gif";
+import css3Logo from "/css3.svg";
+import emailLogo from "/email.svg";
+import html5Logo from "/html5.svg";
+import javaScriptLogo from "/javaScript.svg";
+import nodeLogo from "/node.svg";
+import reactjsLogo from "/reactjs.svg";
+import gitLogo from "/gitHub.svg";
+import skills from "/skills.svg";
+import devFull from "/devFull.svg";
+import linkedinLogo from "/linkedin.svg";
+import arrowTop from "/arrowTop.svg";
+import prevtempo from "/prevtempo.gif";
 import "./App.css";
 
 function App() {

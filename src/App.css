@@ -11,7 +11,7 @@ body {
 .layout-saudation{
   height: 700px;
   background: var(--color-primary-blue-dark, #131750);
-  background-image: url(./images/circle-bg.svg);
+  background-image: url(/circle-bg.svg);
   background-repeat: no-repeat;
   background-position: right top;
   /* background-attachment: fixed; */
@@ -70,7 +70,7 @@ body {
 }
 
 .navbarIcon{
-  background-image: url(./images/navbarIcon.svg);
+  background-image: url(/navbarIcon.svg);
   color: #B12FAE;
   width: 32px;
   height: 32px;
@@ -107,7 +107,7 @@ body {
   .navbarIcon{
     display: flex;
     color: #B12FAE;
-    background-image: url(./images/navbarIcon.svg);
+    background-image: url(/navbarIcon.svg);
     width: 32px;
     height: 32px;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body {
   .navbarIcon.show{
     display: flex;
     color: #B12FAE;
-    background-image: url(./images/navbarCloseIcon.svg);
+    background-image: url(/navbarCloseIcon.svg);
     width: 32px;
     height: 32px;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ body {
 .xlarge{
   position: absolute;
   width: 91%;
-  background-image: url(./images/x-large.svg);
+  background-image: url(/x-large.svg);
   background-position: right;
   margin-right: 95px;
   background-repeat: no-repeat;
@@ -265,7 +265,7 @@ body {
 
 .computer-img{
   display: flex;
-  background-image: url(./images/computer.svg);
+  background-image: url(/computer.svg);
   background-repeat: no-repeat;
   width: 810px;
   height: 600px;
@@ -280,7 +280,7 @@ body {
 
   .computer-img {
     display: flex;
-    background-image: url(./images/computerSmall.svg);
+    background-image: url(/computerSmall.svg);
     background-repeat: no-repeat;
     width: 405px;
     height: 300px;
@@ -554,7 +554,7 @@ body {
   .xmedium{
     position: absolute;
     width: 91%;
-    background-image: url(./images/x-medium.svg);
+    background-image: url(/x-medium.svg);
     background-position: left;
     width: 55px;
     height: 53px;
