@@ -1,6 +1,6 @@
 # Site Apresentação
 
-Esta aplicação foi criada com o intuito de compartilhar minhas experiências e conhecimentos. Espero que goste do conteúdo e que lhe seja útil de alguma forma.
+Aplicação criada com o intuito de compartilhar minhas experiências e conhecimentos. Espero que goste do conteúdo e que lhe seja útil de alguma forma.
 
 ## 🚀 Começando
 
