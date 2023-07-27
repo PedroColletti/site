@@ -6,8 +6,8 @@ import javaScriptLogo from "./images/javaScript.svg";
 import nodeLogo from "./images/node.svg";
 import reactjsLogo from "./images/reactjs.svg";
 import gitLogo from "./images/gitHub.svg";
-import iconsite from "./images/devGif.gif";
-import devFull from "./images/devFull.png";
+import skills from "./images/skills.svg";
+import devFull from "./images/devFull.svg";
 import linkedinLogo from "./images/linkedin.svg";
 import arrowTop from "./images/arrowTop.svg";
 import prevtempo from "./images/prevtempo.gif";
@@ -217,62 +217,66 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="second-div">
-        <div>
+      <div id="aboutme" className="second-div">
+        <div className="imgdiv">
           <img src={devFull} className="aboutmeimg" alt="devFull.svg" />
         </div>
-        <div className="aboutmespan">
-          Desenvolvedor desde 2020, formado em Análise e Desenvolvimento de
-          Sistemas, focado, motivado e pró-ativo. Sempre em busca de novas
-          ideias e soluções viáveis para resoluções de problemas.
-          <br />
-          <br />
-          Experiências anteriores em gerenciamento de projetos, análise e
-          interpretação de dados e negociação.
-        </div>
-      </div>
-      <div id="linguagens">
-        <h2 className="textSkills">Principais Skills </h2>
-      </div>
-      <div className="three-div">
-        <div className="language-div">
-          <strong>FrontEnd:</strong>
-          <div id="checklist">
-            <input value="1" name="r" type="checkbox" id="01" />
-            <label htmlFor="01">React</label>
-            <input value="2" name="r" type="checkbox" id="02" />
-            <label htmlFor="02">TypeScript</label>
-            <input value="3" name="r" type="checkbox" id="03" />
-            <label htmlFor="03">ReactNative</label>
+        <div className="aboutme-div">
+          <div className="aboutme-title">
+            <div className="aboutme-title1">about me</div>
+            <div className="aboutme-title2">
+              #pedro-colletti<span>_</span>
+            </div>
+          </div>
+          <div className="aboutme-span">
+            Desenvolvedor desde 2020, formado em Análise e Desenvolvimento de
+            Sistemas, focado, motivado e pró-ativo. Sempre em busca de novas
+            ideias e soluções viáveis para resoluções de problemas.Experiências
+            anteriores em gerenciamento de projetos, análise e interpretação de
+            dados e negociação.
           </div>
         </div>
-        <div className="language-div">
-          <strong>BackEnd:</strong>
-          <div id="checklist">
-            <input value="4" name="r" type="checkbox" id="04" />
-            <label htmlFor="04">Node</label>
-            <input value="5" name="r" type="checkbox" id="05" />
-            <label htmlFor="05">Adonis</label>
-            <input value="6" name="r" type="checkbox" id="06" />
-            <label htmlFor="06">TypeScript</label>
-          </div>
-        </div>
-        <div className="language-div">
-          <strong>Banco:</strong>
-          <div id="checklist">
-            <input value="7" name="r" type="checkbox" id="07" />
-            <label htmlFor="07">Oracle</label>
-            <input value="8" name="r" type="checkbox" id="08" />
-            <label htmlFor="08">PostgreSql</label>
-            <input value="9" name="r" type="checkbox" id="09" />
-            <label htmlFor="09">MySql</label>
-          </div>
-        </div>
-        <img src={iconsite} className="iconsite" alt="Icon logo" />
       </div>
+      <div id="linguagens" className="three-div">
+        <div className="skills-text-div">
+          <div className="textSkills">HARD SKILLS</div>
+          <div className="language-content">
+            <div className="language-div">
+              <div className="language-title">Front-end</div>
+              <div className="language-content">
+                <div>React</div>
+                <div>TypeScript</div>
+                <div>ReactNative</div>
+              </div>
+            </div>
+            <div className="language-div">
+              <div className="language-title">Back-end</div>
+              <div className="language-content">
+                <div>Node</div>
+                <div>Adonis</div>
+                <div>TypeScript</div>
+              </div>
+            </div>
+            <div className="language-div">
+              <div className="language-title">BD</div>
+              <div className="language-content">
+                <div>Oracle</div>
+                <div>PostgreSql</div>
+                <div>MySql</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src={skills} className="skillsImg" alt="skills.svg" />
+        <div className="xmedium" />
+      </div>
+
       <div id="projects" className="four-div">
-        <div>
-          <h2 className="textProjects">Alguns Projetos</h2>
+        <div className="aboutme-title">
+          <div className="aboutme-title1">projects</div>
+          <div className="aboutme-title2">
+            #aplicações<span>_</span>
+          </div>
         </div>
         <div className="ProjectCard1">
           <div className="firstProject">
@@ -284,34 +288,38 @@ function App() {
               />
             </div>
             <div className="firstProjectContent">
-              <h2>Curriculum Dinâmico</h2>
+              <div className="projectContent-title">Curriculum Dinâmico</div>
               <ul>
                 <li>Html</li>
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>CSS</li>
               </ul>
-              Apresentação de Currículo Interativo com formulário de contato,
-              opção para gerar um PDF do currículo e botões interativos que
-              direcionam para meu perfil no GitHub e LinkedIn.
+              <span>
+                Apresentação de Currículo Interativo com formulário de contato,
+                opção para gerar um PDF do currículo e botões interativos que
+                direcionam para meu perfil no GitHub e LinkedIn.
+              </span>
             </div>
           </div>
         </div>
         <div className="ProjectCard2">
           <div className="secondProject">
             <div className="secondProjectContent">
-              <h2>Previsão do Tempo</h2>
+              <div className="projectContent-title">Previsão do Tempo</div>
               <ul>
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>WEATHER API</li>
                 <li>CSS</li>
               </ul>
-              Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
-              abrir o aplicativo, é solicitada permissão de geolocalização. A
-              interface inclui filtros de busca no input e utiliza a biblioteca
-              Toastify para exibir mensagens de erro de forma elegante para o
-              usuário.
+              <span>
+                Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
+                abrir o aplicativo, é solicitada permissão de geolocalização. A
+                interface inclui filtros de busca no input e utiliza a
+                biblioteca Toastify para exibir mensagens de erro de forma
+                elegante para o usuário.
+              </span>
             </div>
             <div>
               <img
@@ -332,34 +340,38 @@ function App() {
               />
             </div>
             <div className="Project3Content">
-              <h2>Curriculum Dinâmico</h2>
+              <div className="projectContent-title">Curriculum Dinâmico</div>
               <ul>
                 <li>Html</li>
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>CSS</li>
               </ul>
-              Apresentação de Currículo Interativo com formulário de contato,
-              opção para gerar um PDF do currículo e botões interativos que
-              direcionam para meu perfil no GitHub e LinkedIn.
+              <span>
+                Apresentação de Currículo Interativo com formulário de contato,
+                opção para gerar um PDF do currículo e botões interativos que
+                direcionam para meu perfil no GitHub e LinkedIn.
+              </span>
             </div>
           </div>
         </div>
         <div className="ProjectCard4">
           <div className="Project4">
             <div className="Project4Content">
-              <h2>Previsão do Tempo</h2>
+              <div className="projectContent-title">Previsão do Tempo</div>
               <ul>
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>WEATHER API</li>
                 <li>CSS</li>
               </ul>
-              Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
-              abrir o aplicativo, é solicitada permissão de geolocalização. A
-              interface inclui filtros de busca no input e utiliza a biblioteca
-              Toastify para exibir mensagens de erro de forma elegante para o
-              usuário.
+              <span>
+                Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
+                abrir o aplicativo, é solicitada permissão de geolocalização. A
+                interface inclui filtros de busca no input e utiliza a
+                biblioteca Toastify para exibir mensagens de erro de forma
+                elegante para o usuário.
+              </span>
             </div>
             <div>
               <img className="Project4Img" src={prevtempo} alt="prevTempo" />
@@ -381,7 +393,8 @@ function App() {
         </button>
       </form> */}
       <div className="textSite">
-        <h2>Aplicação feita com</h2>
+        <div>aplicação feita com</div>
+        <span>_</span>
       </div>
       <div className="logosIcons">
         <img src={css3Logo} className="logoFinal" alt="css3Logo" />
@@ -391,7 +404,7 @@ function App() {
         <img src={reactjsLogo} className="logoFinal" alt="React logo" />
       </div>
       <div className="footer-flex">
-        <span className="footer-span">Pedro Colletti ©2022. Feito com</span>
+        <span className="footer-span">Feito com</span>
         <footer className="con-like">
           <input title="obrigado" type="checkbox" className="like" />
           <div className="checkmark">
@@ -424,6 +437,7 @@ function App() {
             </svg>
           </div>
         </footer>
+        <span className="footer-span"> por Pedro Colletti</span>
       </div>
     </>
   );
