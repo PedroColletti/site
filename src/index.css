@@ -10,14 +10,14 @@
   display: flex;
   justify-content: center;
   background: var(--color-primary-blue-dark, #131750);
-  height: 5em;
+ 
 }
 
 .footer-flex {
   display: flex;
   justify-content: center;
   background: var(--color-primary-blue-dark, #131750);
-  height: 5em;
+  padding: 40px 0px;
  }
 
 
