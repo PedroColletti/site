@@ -5,8 +5,7 @@ import html5Logo from "./images/html5.svg";
 import javaScriptLogo from "./images/javaScript.svg";
 import nodeLogo from "./images/node.svg";
 import reactjsLogo from "./images/reactjs.svg";
-import gitLogo from "./images/github.svg";
-import avatar from "./images/avatar.png";
+import gitLogo from "./images/gitHub.svg";
 import iconsite from "./images/devGif.gif";
 import devFull from "./images/devFull.png";
 import linkedinLogo from "./images/linkedin.svg";
@@ -116,94 +115,106 @@ function App() {
 
   const [count, setCount] = useState(0);
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+  console.log("isMenuOpen", isMenuOpen);
+
   return (
     <>
       <a id="btnTopo" onClick={() => voltarAoTopo()}>
         <img src={arrowTop} className="logoUpPage" alt="emailLogo" />
       </a>
-      <div className="first-div">
-        <div className="navbar">
-          <div className="navbardiv">
-            <img src={avatar} className="avatar" alt="avatar" />
-            <a href="#aboutme">Quem sou</a>
-            <a href="#linguagens">Know-how</a>
-            <a href="#projects">Projetos feitos</a>
+      {/* INÍCIO HEADER */}
+      <div className="layout-saudation">
+        {/* <div className="header-div"> */}
+        <div className="header-div">
+          <div
+            className={`navbarIcon ${isMenuOpen ? "show" : ""}`}
+            onClick={toggleMenu}
+          />
+          <div className={`teste ${isMenuOpen ? "show" : ""}`}>
+            <a href="#aboutme">ABOUT ME</a>
+            <a href="#linguagens">HARD SKILLS</a>
+            <a href="#projects">PROJECTS</a>
           </div>
-          <div className="navbarSocialMidias">
-            <a
-              href="mailto:pedrocolletti@icloud.com"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                title="Entre em contato"
-                src={emailLogo}
-                className="logo"
-                alt="emailLogo"
-              />
-            </a>
+          <div className="header-links">
+            <a href="#aboutme">ABOUT ME</a>
+            <a href="#linguagens">HARD SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+          </div>
+          <div className="header-contacts">
             <a
               href="https://github.com/PedroColletti"
               target="_blank"
               rel="noopener"
             >
-              <img
-                title="Repositórios"
-                src={gitLogo}
-                className="logo"
-                alt="GitLogo"
-              />
+              <img title="Repositórios" src={gitLogo} alt="GitLogo" />
+            </a>
+            <a
+              href="mailto:pedrocolletti@icloud.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img title="Entre em contato" src={emailLogo} alt="emailLogo" />
             </a>
             <a
               href="https://www.linkedin.com/in/pedrocolletti/"
               target="_blank"
               rel="noopener"
             >
-              <img
-                title="Linkedinho"
-                src={linkedinLogo}
-                className="logo"
-                alt="InLogo"
-              />
+              <img title="Linkedinho" src={linkedinLogo} alt="InLogo" />
             </a>
           </div>
         </div>
-        <div id="aboutme" className="second-container">
-          <div className="container">
-            <div className="content">
-              <div className="content__container">
-                <p className="content__container__text">Hello</p>
-                <ul className="content__container__list">
-                  <li className="content__container__list__item">world !</li>
-                  <li className="content__container__list__item">dev's !</li>
-                  <li className="content__container__list__item">user !</li>
-                  <li className="content__container__list__item">pessoa!</li>
-                </ul>
+        <div className="xlarge" />
+        {/* FIM HEADER */}
+        {/* INÍCIO BODY SAUDATION */}
+        <div id="saudation" className="body-saudation">
+          <div className="first-body">
+            <div className="hello-container">
+              <div className="content">
+                <div className="content__hello-container">
+                  <p className="content__hello-container__text">Hello</p>
+                  <ul className="content__hello-container__list">
+                    <li className="content__hello-container__list__item">
+                      world !
+                    </li>
+                    <li className="content__hello-container__list__item">
+                      dev's !
+                    </li>
+                    <li className="content__hello-container__list__item">
+                      user !
+                    </li>
+                    <li className="content__hello-container__list__item">
+                      pessoa!
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <div className="aboutme">
+              Me chamo Pedro Colletti Silva! Sou desenvolvedor FullStack. 👋
+            </div>
+            <button className="buttonCv" onClick={btnDownloadCV}>
+              {count === 0
+                ? "Download CV"
+                : count === 1
+                ? "Obrigado ✨"
+                : count > 1 && count < 4
+                ? `Obrigado x${count - 1} 😄`
+                : count === 4
+                ? "Muitíssimo obrigado 😲"
+                : count > 4 && count < 8
+                ? `Já foram ${count - 1} CVs 🙄`
+                : `${count - 1} e subindo 🙌`}
+            </button>
           </div>
-          <div className="aboutme">
-            Me chamo Pedro Colletti Silva! Sou desenvolvedor FullStack. 👋
+          <div className="second-body">
+            <div className="computer-img"></div>
           </div>
-        </div>
-        <div className="divbutton">
-          <button className="buttonCv" onClick={btnDownloadCV}>
-            {count === 0
-              ? "Download CV"
-              : count === 1
-              ? "Obrigado ✨"
-              : count === 2
-              ? "Obrigado x2 😄"
-              : count === 3
-              ? "Muitíssimo obrigado 😲"
-              : count === 4
-              ? "Nem sei o que dizer 🤯"
-              : count > 4 && count < 8
-              ? `Já foram ${count - 1} CVs 🙄`
-              : count === 8
-              ? `Só não me hackeie  👀`
-              : `${count - 1} e subindo 🙌`}
-          </button>
         </div>
       </div>
       <div className="second-div">
