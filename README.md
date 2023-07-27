@@ -59,9 +59,9 @@ O projeto está pronto para uso. É isso!
 
 * [VITE](https://vitejs.dev/) - Ferramenta de desenvolvimento
 * [TypeScript](https://www.typescriptlang.org/) - Linguagem
-* [React](https://www.oracle.com) - Biblioteca JavaScript
+* [React](https://react.dev/) - Biblioteca JavaScript
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Linguagem de marcação
-* [CSS](https://www.oracle.com) - Estilização e formatação
+* [CSS](https://www.w3.org/Style/CSS/specs.en.html) - Estilização e formatação
 
 
 </br>
