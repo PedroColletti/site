@@ -837,7 +837,7 @@ body {
  }
 
  .Project3Img {
-  max-width: 350px;
+  max-width: 550px;
   border: 1px solid #dddddd;
   border-radius: 10px;
 }
@@ -895,7 +895,7 @@ body {
   }
 
   .Project3Img {
-    max-width: 220px;
+    max-width: 320px;
     flex-basis: 80%;
     border: 1px solid #dddddd;
   }
@@ -1054,7 +1054,7 @@ body {
     flex-direction: column;
   }
 
-  .ProjectCard3 {
+  .ProjectCard5 {
     padding-top: 10px;
   }
 
