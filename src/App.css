@@ -293,10 +293,7 @@ body {
 
 
 
-.logoFinal {
-  height: 30px;
-  margin-right: 1%;
-}
+
 
 .colorsTheme {
   background:  #242424 ;
@@ -637,12 +634,12 @@ body {
 
   .ProjectCard4 {
     padding-top: 10px;
-    transform: translateY(280px);
+    transform: translateY(240px);
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard4.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 
   /* FIM  DIV PROJETOS */
@@ -986,11 +983,19 @@ body {
 
  /*FOOTER FINAL*/
 
+  .footer-flex {
+      align-items: center;
+      justify-content: center;
+      background: var(--color-primary-blue-dark, #131750);
+      padding: 40px 0px;
+      position: absolute;
+      width: 100%;
+  }
+
  
  .textSite{
     display: flex;
     justify-content: center;
-    background: var(--color-primary-blue-dark, #131750);
     font-size: x-large;
     color: var(--color-neutral-white, #FFF);
     font-size: 40px;
@@ -998,7 +1003,7 @@ body {
     font-weight: 600;
     line-height: 45px;
     height: 90px;
-    padding: 60px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
  }
 
  .textSite span{
@@ -1008,4 +1013,175 @@ body {
     font-weight: 600;
     line-height: 45px;
  }
+
+ .logosIcons {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .logoFinal {
+    height: 30px;
+    margin-right: 1%;
+  }
+
+
+  .madeby {
+    display: flex;
+    justify-content: center; 
+    padding: 30px 0px 30px 0px;
+  }
+
+  .madeby span {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+
+.con-like {
+  position: relative;
+  --red: #B12FAE;
+  width: 0.75em;
+  height: 0.75em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+.con-like .like {
+  position: absolute;
+  margin-left: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.con-like .checkmark {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.con-like .outline,
+.con-like .filled {
+  fill: var(--red);
+  position: absolute;
+}
+
+.con-like .filled {
+  -webkit-animation: kfr-filled 0.5s;
+          animation: kfr-filled 0.5s;
+  display: none;
+}
+
+.con-like .celebrate {
+  position: absolute;
+  -webkit-animation: kfr-celebrate 0.5s;
+          animation: kfr-celebrate 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+}
+
+.con-like .poly {
+  stroke: var(--red);
+  fill: var(--red);
+}
+
+.con-like .like:checked ~ .checkmark .filled {
+  display: block
+}
+
+.con-like .like:checked ~ .checkmark .celebrate {
+  display: block
+}
+
+@-webkit-keyframes kfr-filled {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes kfr-filled {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes kfr-celebrate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes kfr-celebrate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
  
