@@ -2,7 +2,7 @@ import { useState } from "react";
 import css3Logo from "/css3.svg";
 import emailLogo from "/email.svg";
 import html5Logo from "/html5.svg";
-import javaScriptLogo from "/javaScript.svg";
+import typeScriptLogo from "/typeScript.svg";
 import nodeLogo from "/node.svg";
 import reactjsLogo from "/reactjs.svg";
 import gitLogo from "/gitHub.svg";
@@ -433,12 +433,12 @@ function App() {
           <img src={css3Logo} className="logoFinal" alt="css3Logo" />
           <img src={html5Logo} className="logoFinal" alt="html5Logo" />
           <img
-            src={javaScriptLogo}
+            src={typeScriptLogo}
             className="logoFinal"
-            alt="javaScriptLogo"
+            alt="typeScriptLogo"
           />
           <img src={nodeLogo} className="logoFinal" alt="nodeLogo" />
-          <img src={reactjsLogo} className="logoFinal" alt="React logo" />
+          <img src={reactjsLogo} className="logoFinal" alt="ReactLogo" />
         </div>
         <div className="madeby">
           <span>Feito com</span>
