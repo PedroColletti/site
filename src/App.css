@@ -639,7 +639,17 @@ body {
   }
   .ProjectCard4.show {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
+  }
+
+  .ProjectCard5 {
+    padding-top: 10px;
+    transform: translateY(240px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  .ProjectCard5.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* FIM  DIV PROJETOS */
@@ -827,7 +837,7 @@ body {
  }
 
  .Project3Img {
-  max-width: 550px;
+  max-width: 350px;
   border: 1px solid #dddddd;
   border-radius: 10px;
 }
@@ -885,7 +895,7 @@ body {
   }
 
   .Project3Img {
-    max-width: 320px;
+    max-width: 220px;
     flex-basis: 80%;
     border: 1px solid #dddddd;
   }
@@ -978,6 +988,90 @@ body {
     flex-basis: 80%;
   }
 }
+
+ /* FIM DIV QUARTO PROJETO */
+ /* FIM DIV QUARTO PROJETO */
+
+
+ .Project5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+ }
+
+ .Project5Img {
+  max-width: 550px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+.Project5Content {
+  align-items: center;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+} 
+
+
+ .Project5 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 00px;
+  margin: 10px 0;
+}
+
+.Project5 ul li {
+  cursor: default;
+  border-radius: 10px;
+  border: 1px solid var(--color-secondary-pink-regular, #B12FAE);
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  margin: 5px 5px 0 0;
+  color: var(--color-secondary-pink-regular, #B12FAE);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.Project5Content span{
+  color: var(--color-primary-blue-regular, #2E3A72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.8;
+}
+ 
+
+@media screen and (max-width: 1060px) {
+  .Project5 {
+    flex-direction: column;
+  }
+
+  .ProjectCard3 {
+    padding-top: 10px;
+  }
+
+  .Project5Img {
+    max-width: 320px;
+    flex-basis: 80%;
+    border: 1px solid #dddddd;
+  }
+
+  .Project5Content {
+    flex-basis: 80%;
+  }
+}
+
+
+
+
 
  /* FIM DIV QUARTO PROJETO */
 
