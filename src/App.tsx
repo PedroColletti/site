@@ -313,12 +313,13 @@ function App() {
                 <li>AWS</li>
               </ul>
               <span>
-                Participação no Front-end, usando
-                ReactJS/TypeScript/StyledComponents, Back-end, migrando a API de
-                Java para NodeJS/AdonisJs/TypeScript. O site possui três níveis
-                de permissões e desenvolvimento: Administrador, Geral e Comum,
-                com CRUD, capacidade de ler planilhas Excel e salvar dados em um
-                banco PostgreSQL e envio de emails e servidor na AWS.
+                Site com três níveis de permissões e desenvolvimento:
+                Administrador, Geral e Comum, com CRUD, capacidade de ler
+                planilhas Excel e salvar dados em um banco PostgreSQL, envio de
+                emails e recuperação de senhas, consultas, filtros e outras
+                funcionalidades. Participação no Front-end, usando
+                ReactJS/TypeScript/StyledComponents e Back-end migrando a API de
+                Java para NodeJS/AdonisJs/TypeScript.
               </span>
             </div>
           </div>
@@ -339,7 +340,7 @@ function App() {
               <span>
                 Cardápio para uso interno empresarial, CRUD de dietas e
                 refeições, horários agendados pelo user admin de Café da Manhã,
-                Almoço, Café da Tarde e Jantar . Integração com API externa e
+                Almoço, Café da Tarde e Jantar. Integração com API externa e
                 consumo de view Oracle. Deploy máquina em server AWS com docker
                 img e container.
               </span>
@@ -369,10 +370,10 @@ function App() {
               </ul>
               <span>
                 Participação no desenvolvimento mobile AppLife, para uso dos
-                paciente conveniados verem históricos e marcarem consultas,
-                buscar por hospitais ou médicos com filtro de especialidades,
-                editarem seus dados, chamada de emergência e outras
-                funcionalidades.
+                paciente conveniados verem históricos, pagamentos, marcarem
+                consultas, buscar por hospitais ou médicos com filtro de
+                especialidades, editarem seus dados, chamada de emergência e
+                outras funcionalidades.
               </span>
             </div>
           </div>
