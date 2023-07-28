@@ -10,7 +10,11 @@ import skills from "/skills.svg";
 import devFull from "/devFull.svg";
 import linkedinLogo from "/linkedin.svg";
 import arrowTop from "/arrowTop.svg";
+import audTudo from "/audTudo.gif";
+import cardapioMoriah from "/cardapioMoriah.gif";
+import lifeSaude from "/lifeSaude.jpg";
 import prevtempo from "/prevtempo.gif";
+import cvDinamico from "/cvDinamico.gif";
 import "./App.css";
 
 function App() {
@@ -104,6 +108,22 @@ function App() {
   }
 
   window.addEventListener("scroll", handleScrollProject4);
+
+  function handleScrollProject5() {
+    const animatedDiv = document.querySelector(".ProjectCard5");
+    const divPosition = animatedDiv?.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (divPosition) {
+      if (divPosition < screenHeight * 1.35) {
+        animatedDiv.classList.add("show");
+      }
+    } else {
+      null;
+    }
+  }
+
+  window.addEventListener("scroll", handleScrollProject5);
 
   const btnDownloadCV = () => {
     setCount(count + 1);
@@ -281,24 +301,24 @@ function App() {
         <div className="ProjectCard1">
           <div className="firstProject">
             <div>
-              <img
-                className="firstProjectImg"
-                src="https://user-images.githubusercontent.com/71047937/154998575-2d191201-17cc-4fc8-b185-99da2b6ccb23.gif"
-                alt="cvDinamico"
-              />
+              <img className="firstProjectImg" src={audTudo} alt="cvDinamico" />
             </div>
             <div className="firstProjectContent">
-              <div className="projectContent-title">Curriculum Dinâmico</div>
+              <div className="projectContent-title">AudTudo</div>
               <ul>
-                <li>Html</li>
-                <li>React</li>
                 <li>TypeScript</li>
-                <li>CSS</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>PostgreSQL</li>
+                <li>AWS</li>
               </ul>
               <span>
-                Apresentação de Currículo Interativo com formulário de contato,
-                opção para gerar um PDF do currículo e botões interativos que
-                direcionam para meu perfil no GitHub e LinkedIn.
+                Participação no Front-end, usando
+                ReactJS/TypeScript/StyledComponents, Back-end, migrando a API de
+                Java para NodeJS/AdonisJs/TypeScript. O site possui três níveis
+                de permissões e desenvolvimento: Administrador, Geral e Comum,
+                com CRUD, capacidade de ler planilhas Excel e salvar dados em um
+                banco PostgreSQL e envio de emails e servidor na AWS.
               </span>
             </div>
           </div>
@@ -306,25 +326,28 @@ function App() {
         <div className="ProjectCard2">
           <div className="secondProject">
             <div className="secondProjectContent">
-              <div className="projectContent-title">Previsão do Tempo</div>
+              <div className="projectContent-title">
+                Cardápio Hospital Moriah
+              </div>
               <ul>
-                <li>React</li>
                 <li>TypeScript</li>
-                <li>WEATHER API</li>
-                <li>CSS</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Oracle</li>
+                <li>Docker</li>
               </ul>
               <span>
-                Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
-                abrir o aplicativo, é solicitada permissão de geolocalização. A
-                interface inclui filtros de busca no input e utiliza a
-                biblioteca Toastify para exibir mensagens de erro de forma
-                elegante para o usuário.
+                Cardápio para uso interno empresarial, CRUD de dietas e
+                refeições, horários agendados pelo user admin de Café da Manhã,
+                Almoço, Café da Tarde e Jantar . Integração com API externa e
+                consumo de view Oracle. Deploy máquina em server AWS com docker
+                img e container.
               </span>
             </div>
             <div>
               <img
                 className="secondProjectImg"
-                src={prevtempo}
+                src={cardapioMoriah}
                 alt="prevTempo"
               />
             </div>
@@ -333,24 +356,23 @@ function App() {
         <div className="ProjectCard3">
           <div className="Project3">
             <div>
-              <img
-                className="Project3Img"
-                src="https://user-images.githubusercontent.com/71047937/154998575-2d191201-17cc-4fc8-b185-99da2b6ccb23.gif"
-                alt="cvDinamico"
-              />
+              <img className="Project3Img" src={lifeSaude} alt="cvDinamico" />
             </div>
             <div className="Project3Content">
-              <div className="projectContent-title">Curriculum Dinâmico</div>
+              <div className="projectContent-title">Life Mobile</div>
               <ul>
-                <li>Html</li>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>CSS</li>
+                <li>Typescript</li>
+                <li>ReactNative</li>
+                <li>Node</li>
+                <li>Oracle</li>
+                <li>Docker</li>
               </ul>
               <span>
-                Apresentação de Currículo Interativo com formulário de contato,
-                opção para gerar um PDF do currículo e botões interativos que
-                direcionam para meu perfil no GitHub e LinkedIn.
+                Participação no desenvolvimento mobile AppLife, para uso dos
+                paciente conveniados verem históricos e marcarem consultas,
+                buscar por hospitais ou médicos com filtro de especialidades,
+                editarem seus dados, chamada de emergência e outras
+                funcionalidades.
               </span>
             </div>
           </div>
@@ -378,20 +400,29 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="ProjectCard5">
+          <div className="Project5">
+            <div>
+              <img className="Project5Img" src={cvDinamico} alt="cvDinamico" />
+            </div>
+            <div className="Project5Content">
+              <div className="projectContent-title">Curriculum Dinâmico</div>
+              <ul>
+                <li>Html</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>CSS</li>
+              </ul>
+              <span>
+                Apresentação de Currículo Interativo com formulário de contato,
+                opção para gerar um PDF do currículo e botões interativos que
+                direcionam para meu perfil no GitHub e LinkedIn.
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      {/*       <form className="contact-form" action="#" method="POST">
-        <label htmlFor="name">Nome:</label>
-        <input type="text" id="name" name="name" required />
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label htmlFor="message">Mensagem:</label>
-        <textarea id="message" name="message" rows={4} required></textarea>
-        <button className="buttonform" type="submit">
-          Enviar
-        </button>
-      </form> */}
       <div className="footer-flex">
         <div className="textSite">
           <div>aplicação feita com</div>
