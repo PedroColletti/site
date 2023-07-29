@@ -91,6 +91,17 @@ body {
   display: none;
  }
 
+@media screen and (max-width: 649px) {
+  .xlarge{
+    width: 74.041px;
+    height: 74.042px;
+    background-image: url(/x-large-mobile.svg);
+    background-position: left;
+    margin-top: 340px;
+    margin-left: 50px;
+  } 
+}
+
 @media screen and (max-width: 949px) {
 
   .layout-saudation{
@@ -100,17 +111,6 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom;
   }
-  
-  .xlarge{
-    width: 74.041px;
-    height: 74.042px;
-    background-image: url(/x-large-mobile.svg);
-
-    background-position: left;
-    margin-top: 340px;
-    margin-left: 50px;
-  } 
-
 
   .header-links {
     display: none;
