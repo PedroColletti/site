@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import css3Logo from "/css3.svg";
 import emailLogo from "/email.svg";
 import html5Logo from "/html5.svg";
@@ -135,23 +135,39 @@ function App() {
 
   const [count, setCount] = useState(0);
 
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  let [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Adiciona um listener para o evento de redimensionamento
+    window.addEventListener("resize", handleResize);
+
+    // Remove o listener quando o componente é desmontado
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const bodyElement = document.querySelector("body");
+
   if (bodyElement) {
     bodyElement.style.overflow = isMenuOpen ? "hidden" : "auto";
   }
 
-  /*   useEffect(() => {
-    const bodyElement = document.querySelector("body");
+  if (windowWidth > 578.99) {
     if (bodyElement) {
-      bodyElement.style.overflow = isMenuOpen ? "hidden" : "auto";
+      bodyElement.style.overflow = "auto";
     }
-  }, [isMenuOpen]); */
+  }
 
   return (
     <>
@@ -205,7 +221,8 @@ function App() {
               <div className="expandableXmedium" />
               <div className="name-div">
                 <div className="expandableName">
-                  #pedro-colletti<span>_</span>
+                  #pedro-colletti
+                  <span />
                 </div>
               </div>
             </div>
