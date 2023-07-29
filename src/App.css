@@ -88,7 +88,7 @@ body {
   display: none;
  }
 
- .spandable{
+ .expandable{
   display: none;
  }
 
@@ -195,7 +195,7 @@ body {
     z-index: 9999;
    }
 
-  .spandable.show {
+  .expandable.show {
     position: fixed;
     top: 0;
     left: 0;
@@ -212,7 +212,7 @@ body {
   }
 
 
-  .spandable.show a{
+  .expandable.show a{
     color: var(--color-primary-blue-dark, #ffffff);   
   }
 }

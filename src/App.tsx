@@ -141,12 +141,17 @@ function App() {
     setMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
+  const bodyElement = document.querySelector("body");
+  if (bodyElement) {
+    bodyElement.style.overflow = isMenuOpen ? "hidden" : "auto";
+  }
+
+  /*   useEffect(() => {
     const bodyElement = document.querySelector("body");
     if (bodyElement) {
       bodyElement.style.overflow = isMenuOpen ? "hidden" : "auto";
     }
-  }, [isMenuOpen]);
+  }, [isMenuOpen]); */
 
   return (
     <>
@@ -161,7 +166,7 @@ function App() {
             className={`navbarIcon ${isMenuOpen ? "show" : ""}`}
             onClick={toggleMenu}
           />
-          <div className={`spandable ${isMenuOpen ? "show" : ""}`}>
+          <div className={`expandable ${isMenuOpen ? "show" : ""}`}>
             <a href="#aboutme" onClick={toggleMenu}>
               ABOUT ME
             </a>
