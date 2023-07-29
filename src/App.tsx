@@ -167,15 +167,48 @@ function App() {
             onClick={toggleMenu}
           />
           <div className={`expandable ${isMenuOpen ? "show" : ""}`}>
-            <a href="#aboutme" onClick={toggleMenu}>
-              ABOUT ME
-            </a>
-            <a href="#linguagens" onClick={toggleMenu}>
-              HARD SKILLS
-            </a>
-            <a href="#projects" onClick={toggleMenu}>
-              PROJECTS
-            </a>
+            <div className="expandable-content">
+              <div className="expandableShortCuts">
+                <a href="#aboutme" onClick={toggleMenu}>
+                  ABOUT ME
+                </a>
+                <a
+                  className="expandableArrow"
+                  href="#aboutme"
+                  onClick={toggleMenu}
+                />
+              </div>
+              <div className="expandableline" />
+              <div className="expandableShortCuts">
+                <a href="#linguagens" onClick={toggleMenu}>
+                  HARD SKILLS
+                </a>
+                <a
+                  className="expandableArrow"
+                  href="#linguagens"
+                  onClick={toggleMenu}
+                />
+              </div>
+              <div className="expandableline" />
+              <div className="expandableShortCuts">
+                <a href="#projects" onClick={toggleMenu}>
+                  PROJECTS
+                </a>
+                <a
+                  className="expandableArrow"
+                  href="#projects"
+                  onClick={toggleMenu}
+                />
+              </div>
+              <div className="expandableline" />
+              <div className="expandableXlarge" />
+              <div className="expandableXmedium" />
+              <div className="name-div">
+                <div className="expandableName">
+                  #pedro-colletti<span>_</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="header-links">
             <a href="#aboutme">ABOUT ME</a>
@@ -256,13 +289,15 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="aboutme" className="second-div">
+      <div className="second-div">
         <div className="imgdiv">
           <img src={devFull} className="aboutmeimg" alt="devFull.svg" />
         </div>
         <div className="aboutme-div">
           <div className="aboutme-title">
-            <div className="aboutme-title1">about me</div>
+            <div id="aboutme" className="aboutme-title1">
+              about me
+            </div>
             <div className="aboutme-title2">
               #pedro-colletti<span>_</span>
             </div>
@@ -310,8 +345,8 @@ function App() {
         <div className="xmedium" />
       </div>
 
-      <div id="projects" className="four-div">
-        <div className="aboutme-title">
+      <div className="four-div">
+        <div id="projects" className="aboutme-title">
           <div className="aboutme-title1">projects</div>
           <div className="aboutme-title2">
             #aplicações<span>_</span>
