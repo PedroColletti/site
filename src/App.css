@@ -266,7 +266,7 @@ body {
   } 
 
   .name-div{
-    padding: 65px 80px;
+    padding: 65px 0px 0px 80px;
   }
 
   .expandableName{
@@ -274,6 +274,7 @@ body {
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
+    width: 280px;
     line-height: 42px; /* 150% */
    }
   
