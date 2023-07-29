@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import css3Logo from "/css3.svg";
 import emailLogo from "/email.svg";
 import html5Logo from "/html5.svg";
