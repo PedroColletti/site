@@ -218,7 +218,7 @@ function App() {
             <div className="aboutme">
               Me chamo Pedro Colletti Silva! Sou desenvolvedor FullStack. 👋
             </div>
-            <div>
+            <div className="buttonCvDiv">
               <button className="buttonCv" onClick={btnDownloadCV}>
                 {count === 0
                   ? "Download CV"
