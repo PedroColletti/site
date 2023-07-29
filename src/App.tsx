@@ -10,9 +10,8 @@ import skills from "/skills.svg";
 import devFull from "/devFull.svg";
 import linkedinLogo from "/linkedin.svg";
 import arrowTop from "/arrowTop.svg";
-/* import audTudo from "/audTudo.gif";
-import cardapioMoriah from "/cardapioMoriah.gif";
-import lifeSaude from "/lifeSaude.jpg"; */
+import audTudo from "/audTudo.gif";
+import lifeSaude from "/lifeSaude.jpg";
 import prevtempo from "/prevtempo.gif";
 import cvDinamico from "/cvDinamico.gif";
 import "./App.css";
@@ -369,7 +368,7 @@ function App() {
             #aplicações<span>_</span>
           </div>
         </div>
-        {/*         <div className="ProjectCard1">
+        <div className="ProjectCard1">
           <div className="firstProject">
             <div>
               <img className="firstProjectImg" src={audTudo} alt="cvDinamico" />
@@ -398,42 +397,8 @@ function App() {
         <div className="ProjectCard2">
           <div className="secondProject">
             <div className="secondProjectContent">
-              <div className="projectContent-title">
-                Cardápio Hospital Moriah
-              </div>
-              <ul>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Oracle</li>
-                <li>Docker</li>
-              </ul>
-              <span>
-                Cardápio para uso interno empresarial, CRUD de dietas e
-                refeições, horários agendados pelo user admin de Café da Manhã,
-                Almoço, Café da Tarde e Jantar. Integração com API externa e
-                consumo de view Oracle. Deploy máquina em server AWS com docker
-                img e container.
-              </span>
-            </div>
-            <div>
-              <img
-                className="secondProjectImg"
-                src={cardapioMoriah}
-                alt="prevTempo"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="ProjectCard3">
-          <div className="Project3">
-            <div>
-              <img className="Project3Img" src={lifeSaude} alt="cvDinamico" />
-            </div>
-            <div className="Project3Content">
               <div className="projectContent-title">Life Mobile</div>
               <ul>
-                <li>Typescript</li>
                 <li>ReactNative</li>
                 <li>Node</li>
                 <li>Oracle</li>
@@ -447,11 +412,21 @@ function App() {
                 emergência e outras funcionalidades.
               </span>
             </div>
+            <div>
+              <img
+                className="secondProjectImg"
+                src={lifeSaude}
+                alt="prevTempo"
+              />
+            </div>
           </div>
-        </div> */}
-        <div className="ProjectCard4">
-          <div className="Project4">
-            <div className="Project4Content">
+        </div>
+        <div className="ProjectCard3">
+          <div className="Project3">
+            <div>
+              <img className="Project3Img" src={prevtempo} alt="cvDinamico" />
+            </div>
+            <div className="Project3Content">
               <div className="projectContent-title">Previsão do Tempo</div>
               <ul>
                 <li>React</li>
@@ -467,12 +442,30 @@ function App() {
                 elegante para o usuário.
               </span>
             </div>
+          </div>
+        </div>
+        <div className="ProjectCard4">
+          <div className="Project4">
+            <div className="Project4Content">
+              <div className="projectContent-title">Curriculum Dinâmico</div>
+              <ul>
+                <li>Html</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>SASS</li>
+              </ul>
+              <span>
+                Apresentação de Currículo Interativo com formulário de contato,
+                opção para gerar um PDF do currículo e botões interativos que
+                direcionam para meu perfil no GitHub e LinkedIn.
+              </span>
+            </div>
             <div>
-              <img className="Project4Img" src={prevtempo} alt="prevTempo" />
+              <img className="Project4Img" src={cvDinamico} alt="prevTempo" />
             </div>
           </div>
         </div>
-        <div className="ProjectCard5">
+        {/*         <div className="ProjectCard5">
           <div className="Project5">
             <div>
               <img className="Project5Img" src={cvDinamico} alt="cvDinamico" />
@@ -492,7 +485,7 @@ function App() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-flex">
