@@ -10,9 +10,9 @@ import skills from "/skills.svg";
 import devFull from "/devFull.svg";
 import linkedinLogo from "/linkedin.svg";
 import arrowTop from "/arrowTop.svg";
-import audTudo from "/audTudo.gif";
+/* import audTudo from "/audTudo.gif";
 import cardapioMoriah from "/cardapioMoriah.gif";
-import lifeSaude from "/lifeSaude.jpg";
+import lifeSaude from "/lifeSaude.jpg"; */
 import prevtempo from "/prevtempo.gif";
 import cvDinamico from "/cvDinamico.gif";
 import "./App.css";
@@ -218,19 +218,21 @@ function App() {
             <div className="aboutme">
               Me chamo Pedro Colletti Silva! Sou desenvolvedor FullStack. 👋
             </div>
-            <button className="buttonCv" onClick={btnDownloadCV}>
-              {count === 0
-                ? "Download CV"
-                : count === 1
-                ? "Obrigado ✨"
-                : count > 1 && count < 4
-                ? `Obrigado x${count - 1} 😄`
-                : count === 4
-                ? "Muitíssimo obrigado 😲"
-                : count > 4 && count < 8
-                ? `Já foram ${count - 1} CVs 🙄`
-                : `${count - 1} e subindo 🙌`}
-            </button>
+            <div>
+              <button className="buttonCv" onClick={btnDownloadCV}>
+                {count === 0
+                  ? "Download CV"
+                  : count === 1
+                  ? "Obrigado ✨"
+                  : count > 1 && count < 4
+                  ? `Obrigado x${count - 1} 😄`
+                  : count === 4
+                  ? "Muitíssimo obrigado 😲"
+                  : count > 4 && count < 8
+                  ? `Já foram ${count - 1} CVs 🙄`
+                  : `${count - 1} e subindo 🙌`}
+              </button>
+            </div>
           </div>
           <div className="second-body">
             <div className="computer-img"></div>
@@ -298,7 +300,7 @@ function App() {
             #aplicações<span>_</span>
           </div>
         </div>
-        <div className="ProjectCard1">
+        {/*         <div className="ProjectCard1">
           <div className="firstProject">
             <div>
               <img className="firstProjectImg" src={audTudo} alt="cvDinamico" />
@@ -369,15 +371,15 @@ function App() {
                 <li>Docker</li>
               </ul>
               <span>
-                Participação no desenvolvimento mobile AppLife, para uso dos
-                paciente conveniados verem históricos, pagamentos, marcarem
-                consultas, buscar por hospitais ou médicos com filtro de
-                especialidades, editarem seus dados, chamada de emergência e
-                outras funcionalidades.
+                Participação no desenvolvimento AppLife, disponível na AppStore
+                e PlayStore, para uso dos paciente conveniados verem históricos,
+                pagamentos, marcarem consultas, buscar por hospitais ou médicos
+                com filtro de especialidades, editarem seus dados, chamada de
+                emergência e outras funcionalidades.
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="ProjectCard4">
           <div className="Project4">
             <div className="Project4Content">
