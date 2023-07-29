@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import css3Logo from "/css3.svg";
 import emailLogo from "/email.svg";
 import html5Logo from "/html5.svg";
@@ -38,9 +38,9 @@ function App() {
     var elements = document.querySelector(".three-div");
     if (elements) {
       if (window.scrollY > elements.getBoundingClientRect().top) {
-        elements.classList.add("visibleTeste");
+        elements.classList.add("visibleSkilss");
       } else {
-        elements.classList.remove("visibleTeste");
+        elements.classList.remove("visibleSkilss");
       }
     } else {
       null;
@@ -140,7 +140,13 @@ function App() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  console.log("isMenuOpen", isMenuOpen);
+
+  useEffect(() => {
+    const bodyElement = document.querySelector("body");
+    if (bodyElement) {
+      bodyElement.style.overflow = isMenuOpen ? "hidden" : "auto";
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -155,10 +161,16 @@ function App() {
             className={`navbarIcon ${isMenuOpen ? "show" : ""}`}
             onClick={toggleMenu}
           />
-          <div className={`teste ${isMenuOpen ? "show" : ""}`}>
-            <a href="#aboutme">ABOUT ME</a>
-            <a href="#linguagens">HARD SKILLS</a>
-            <a href="#projects">PROJECTS</a>
+          <div className={`spandable ${isMenuOpen ? "show" : ""}`}>
+            <a href="#aboutme" onClick={toggleMenu}>
+              ABOUT ME
+            </a>
+            <a href="#linguagens" onClick={toggleMenu}>
+              HARD SKILLS
+            </a>
+            <a href="#projects" onClick={toggleMenu}>
+              PROJECTS
+            </a>
           </div>
           <div className="header-links">
             <a href="#aboutme">ABOUT ME</a>
