@@ -870,7 +870,7 @@ body {
 
   .ProjectCard1 {
     padding-top: 10px;
-    transform: translateY(140px);
+    transform: translateY(240px);
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard1.show {
@@ -880,7 +880,7 @@ body {
 
   .ProjectCard2 {
     padding-top: 10px;
-    transform: translateY(280px); 
+    transform: translateY(480px); 
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard2.show {
@@ -890,7 +890,7 @@ body {
 
   .ProjectCard3 {
     padding-top: 10px;
-    transform: translateY(280px);
+    transform: translateY(480px);
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard3.show {
@@ -901,7 +901,7 @@ body {
 
   .ProjectCard4 {
     padding-top: 10px;
-    transform: translateY(240px);
+    transform: translateY(480px);
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard4.show {
@@ -911,7 +911,7 @@ body {
 
   .ProjectCard5 {
     padding-top: 10px;
-    transform: translateY(240px);
+    transform: translateY(480px);
     transition: opacity 1.5s ease, transform 1.5s ease;
   }
   .ProjectCard5.show {
@@ -1001,7 +1001,7 @@ body {
   }
 
   .ProjectCard1 {
-    padding-top: 60px;
+    padding-top: 10px;
   }
 
   .firstProjectImg {
@@ -1023,7 +1023,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 30px;
  }
 
 .secondProjectImg {
@@ -1105,7 +1105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 60px;
  }
 
  .Project3Img {
