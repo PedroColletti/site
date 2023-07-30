@@ -95,7 +95,7 @@ body {
 @media screen and (max-width: 649px) {
   .xlarge{
     width: 74.041px;
-    height: 74.042px;
+    height: 250px;
     background-image: url(/x-large-mobile.svg);
     background-position: left;
     margin-top: 340px;
@@ -162,15 +162,24 @@ body {
 @media screen and (max-width: 578.99px) {
 
   .header-div {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 50px 30px;
+    width: 87%;
+    transform:2s ;
+    background: none;
+    z-index: 9996;
+    padding: 25px 7%;
   }
 
  .header-links {
     display: none;
   } 
+
+  .first-body {
+    margin-top: 110px;
+    margin-left: 10px;
+  }
 
   .navbarIcon{
     display: flex;
@@ -189,7 +198,7 @@ body {
     height: 32px;
     background-repeat: no-repeat;
     position: fixed;
-    top: 60px;
+    top: 35px;
     left: 35px;
     color: white;
     z-index: 9999;
@@ -528,7 +537,7 @@ body {
 #btnTopo {
   display: none;
   position: fixed;
-  z-index: 9997;
+  z-index: 9992;
   bottom: 5%;
   right: 3%;
   padding: 0.2% 0.5%;

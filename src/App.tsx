@@ -141,20 +141,42 @@ function App() {
   };
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(0);
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
 
+  const handleScroll = () => {
+    setWindowHeight(window.scrollY);
+  };
+
   useEffect(() => {
     // Adiciona um listener para o evento de redimensionamento
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     // Remove o listener quando o componente é desmontado
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const headerElement = document.querySelector(".header-div") as HTMLElement;
+
+  console.log("screenHeight", windowHeight);
+
+  if (headerElement) {
+    if (windowHeight > 50 && windowWidth < 578.99) {
+      headerElement.style.background =
+        "var(--color-primary-blue-dark, #131750)";
+      headerElement.style.transition = "background 0.4s";
+    } else {
+      headerElement.style.background = "none";
+      headerElement.style.transition = "background 0.8s";
+    }
+  }
 
   const bodyElement = document.querySelector("body");
 
@@ -305,15 +327,13 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="second-div">
+      <div id="aboutme" className="second-div">
         <div className="imgdiv">
           <img src={devFull} className="aboutmeimg" alt="devFull.svg" />
         </div>
         <div className="aboutme-div">
           <div className="aboutme-title">
-            <div id="aboutme" className="aboutme-title1">
-              about me
-            </div>
+            <div className="aboutme-title1">about me</div>
             <div className="aboutme-title2">
               #pedro-colletti<span>_</span>
             </div>
@@ -360,9 +380,8 @@ function App() {
         <img src={skills} className="skillsImg" alt="skills.svg" />
         <div className="xmedium" />
       </div>
-
-      <div className="four-div">
-        <div id="projects" className="aboutme-title">
+      <div id="projects" className="four-div">
+        <div className="aboutme-title">
           <div className="aboutme-title1">projects</div>
           <div className="aboutme-title2">
             #aplicações<span>_</span>
