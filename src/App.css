@@ -222,10 +222,11 @@ body {
 
   .expandableShortCuts{
     display: flex;
+    align-items: center;
   }
 
   .expandable.show a{
-    padding: 20px 20px;
+    padding: 11px 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -996,7 +997,10 @@ body {
 
 @media screen and (max-width: 1060px) {
   .four-div {
-   padding: 30% 5%; 
+   padding: 100px 5% ; 
+  }
+  .aboutme-title {
+    margin-left: 4%;
   }
 
   .textProjects{
