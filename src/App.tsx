@@ -165,8 +165,6 @@ function App() {
 
   const headerElement = document.querySelector(".header-div") as HTMLElement;
 
-  console.log("screenHeight", windowHeight);
-
   if (headerElement) {
     if (windowHeight > 50 && windowWidth < 578.99) {
       headerElement.style.background =
