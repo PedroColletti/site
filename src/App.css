@@ -1397,6 +1397,14 @@ body {
     line-height: 45px;
  }
 
+ .textSite span:before{
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: var(--color-secondary-pink-regular, #00E0FF);
+  content: '_';
+}
+
  .logosIcons {
     display: flex;
     justify-content: center; 
