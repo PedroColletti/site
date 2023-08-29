@@ -14,6 +14,7 @@ import audTudo from "/audTudo.gif";
 import lifeSaude from "/lifeSaude.jpg";
 import prevtempo from "/prevtempo.gif";
 import cvDinamico from "/cvDinamico.gif";
+import superMario from "/SuperMario.gif";
 import "./App.css";
 
 function App() {
@@ -464,25 +465,25 @@ function App() {
         <div className="ProjectCard4">
           <div className="Project4">
             <div className="Project4Content">
-              <div className="projectContent-title">Curriculum Dinâmico</div>
+              <div className="projectContent-title">Jogo Mario Jump</div>
               <ul>
-                <li>Html</li>
                 <li>React</li>
                 <li>TypeScript</li>
-                <li>SASS</li>
+                <li>Html</li>
+                <li>CSS</li>
               </ul>
               <span>
-                Apresentação de Currículo Interativo com formulário de contato,
-                opção para gerar um PDF do currículo e botões interativos que
-                direcionam para meu perfil no GitHub e LinkedIn.
+                WebGame que utiliza JavaScript para aprimorar a interatividade
+                por meio da manipulação dinâmica do HTML. Para começar e superar
+                os desafios, basta pressionar a tecla de espaço.
               </span>
             </div>
             <div>
-              <img className="Project4Img" src={cvDinamico} alt="prevTempo" />
+              <img className="Project4Img" src={superMario} alt="superMario" />
             </div>
           </div>
         </div>
-        {/*         <div className="ProjectCard5">
+        <div className="ProjectCard5">
           <div className="Project5">
             <div>
               <img className="Project5Img" src={cvDinamico} alt="cvDinamico" />
@@ -502,13 +503,13 @@ function App() {
               </span>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       <div className="footer-flex">
         <div className="textSite">
           <div>aplicação feita com</div>
-          <span>_</span>
+          <span />
         </div>
         <div className="logosIcons">
           <img src={css3Logo} className="logoFinal" alt="css3Logo" />
