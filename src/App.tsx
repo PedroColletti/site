@@ -191,7 +191,7 @@ function App() {
 
   return (
     <>
-      <a id="btnTopo" onClick={() => voltarAoTopo()}>
+      <a id="btnTopo" aria-label="bntTopo" onClick={() => voltarAoTopo()}>
         <img src={arrowTop} className="logoUpPage" alt="emailLogo" />
       </a>
       {/* INÍCIO HEADER */}
@@ -205,34 +205,41 @@ function App() {
           <div className={`expandable ${isMenuOpen ? "show" : ""}`}>
             <div className="expandable-content">
               <div className="expandableShortCuts">
-                <a href="#aboutme" onClick={toggleMenu}>
+                <a href="#aboutme" aria-label="aboutme" onClick={toggleMenu}>
                   ABOUT ME
                 </a>
                 <a
                   className="expandableArrow"
                   href="#aboutme"
+                  aria-label="expandableArrow"
                   onClick={toggleMenu}
                 />
               </div>
               <div className="expandableline" />
               <div className="expandableShortCuts">
-                <a href="#linguagens" onClick={toggleMenu}>
+                <a
+                  href="#linguagens"
+                  aria-label="linguagens"
+                  onClick={toggleMenu}
+                >
                   HARD SKILLS
                 </a>
                 <a
                   className="expandableArrow"
                   href="#linguagens"
+                  aria-label="linguagens2"
                   onClick={toggleMenu}
                 />
               </div>
               <div className="expandableline" />
               <div className="expandableShortCuts">
-                <a href="#projects" onClick={toggleMenu}>
+                <a href="#projects" aria-label="projects2" onClick={toggleMenu}>
                   PROJECTS
                 </a>
                 <a
                   className="expandableArrow"
                   href="#projects"
+                  aria-label="projects3"
                   onClick={toggleMenu}
                 />
               </div>
@@ -248,14 +255,21 @@ function App() {
             </div>
           </div>
           <div className="header-links">
-            <a href="#aboutme">ABOUT ME</a>
-            <a href="#linguagens">HARD SKILLS</a>
-            <a href="#projects">PROJECTS</a>
+            <a href="#aboutme" aria-label="aboutmeText">
+              ABOUT ME
+            </a>
+            <a href="#linguagens" aria-label="linguagensText">
+              HARD SKILLS
+            </a>
+            <a href="#projects" aria-label="projectsText">
+              PROJECTS
+            </a>
           </div>
           <div className="header-contacts">
             <a
               href="https://github.com/PedroColletti"
               target="_blank"
+              aria-label="header-contacts"
               rel="noopener"
             >
               <img title="Repositórios" src={gitLogo} alt="GitLogo" />
@@ -263,6 +277,7 @@ function App() {
             <a
               href="mailto:pedrocolletti@icloud.com"
               target="_blank"
+              aria-label="repositórios"
               rel="noopener"
             >
               <img title="Entre em contato" src={emailLogo} alt="emailLogo" />
@@ -270,6 +285,7 @@ function App() {
             <a
               href="https://www.linkedin.com/in/pedrocolletti/"
               target="_blank"
+              aria-label="EntreEmContato"
               rel="noopener"
             >
               <img title="Linkedinho" src={linkedinLogo} alt="InLogo" />
