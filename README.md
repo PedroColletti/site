@@ -2,6 +2,13 @@
 
 Aplicação criada com o intuito de compartilhar minhas experiências e conhecimentos. Espero que goste do conteúdo e que lhe seja útil de alguma forma.
 
+# Figma 
+
+![image](https://github.com/PedroColletti/site/assets/71047937/51929601-1ade-4041-ad4c-bf1374b97483)
+
+![image](https://github.com/PedroColletti/site/assets/71047937/30ec8cfd-addd-4b0e-8cb2-c017de6ad6b8)
+
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em sua máquina local para fins de desenvolvimento, testes e quem sabe algo a mais.
