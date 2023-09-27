@@ -6,9 +6,10 @@ Aplicação criada com o intuito de compartilhar minhas experiências e conhecim
 
 # Figma 
 
-![image](https://github.com/PedroColletti/site/assets/71047937/51929601-1ade-4041-ad4c-bf1374b97483)
+![image](https://github.com/PedroColletti/site/assets/71047937/5a092f2a-ca4a-4617-9571-aced739a57c0)
 
-![image](https://github.com/PedroColletti/site/assets/71047937/30ec8cfd-addd-4b0e-8cb2-c017de6ad6b8)
+![image](https://github.com/PedroColletti/site/assets/71047937/bec198e8-5857-4c67-bce4-158dab1ab0a6)
+
 
 
 ## 🚀 Começando
