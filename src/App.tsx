@@ -14,7 +14,7 @@ import audTudo from "/audTudo.gif";
 import lifeSaude from "/lifeSaude.jpg";
 import prevtempo from "/prevtempo.gif";
 import cvDinamico from "/cvDinamico.gif";
-import superMario from "/SuperMario.gif";
+import superMario from "/mario.gif";
 import quiz from "/quiz.gif";
 import "./App.css";
 
