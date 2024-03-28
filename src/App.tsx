@@ -14,7 +14,8 @@ import audTudo from "/audTudo.gif";
 import lifeSaude from "/lifeSaude.jpg";
 import prevtempo from "/prevtempo.gif";
 import cvDinamico from "/cvDinamico.gif";
-import superMario from "/SuperMario.gif";
+import superMario from "/superMario.gif";
+import quiz from "/quiz.gif";
 import "./App.css";
 
 function App() {
@@ -124,6 +125,22 @@ function App() {
   }
 
   window.addEventListener("scroll", handleScrollProject5);
+
+  function handleScrollProject6() {
+    const animatedDiv = document.querySelector(".ProjectCard6");
+    const divPosition = animatedDiv?.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (divPosition) {
+      if (divPosition < screenHeight * 1.35) {
+        animatedDiv.classList.add("show");
+      }
+    } else {
+      null;
+    }
+  }
+
+  window.addEventListener("scroll", handleScrollProject6);
 
   const btnDownloadCV = () => {
     setCount(count + 1);
@@ -437,6 +454,8 @@ function App() {
                 <li>Node</li>
                 <li>Oracle</li>
                 <li>Docker</li>
+                <li>AWS</li>
+                <li>FireBase</li>
               </ul>
               <span>
                 Participação no desenvolvimento AppLife, disponível na AppStore
@@ -467,6 +486,7 @@ function App() {
                 <li>TypeScript</li>
                 <li>WEATHER API</li>
                 <li>CSS</li>
+                <li>Node</li>
               </ul>
               <span>
                 Aplicativo de Previsão do Tempo integrado com WEATHER API. Ao
@@ -481,21 +501,22 @@ function App() {
         <div className="ProjectCard4">
           <div className="Project4">
             <div className="Project4Content">
-              <div className="projectContent-title">Jogo Mario Jump</div>
+              <div className="projectContent-title">Quiz</div>
               <ul>
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>Html</li>
                 <li>CSS</li>
+                <li>Node</li>
               </ul>
               <span>
-                WebGame que utiliza JavaScript para aprimorar a interatividade
-                por meio da manipulação dinâmica do HTML. Para começar e superar
-                os desafios, basta pressionar a tecla de espaço.
+                Jogo de quiz na web com múltiplas escolhas abordando HTML, CSS,
+                JavaScript e Acessibilidade. Inclui validações de respostas,
+                exibição de resultados e opção para jogar novamente.
               </span>
             </div>
             <div>
-              <img className="Project4Img" src={superMario} alt="superMario" />
+              <img className="Project6Img" src={quiz} alt="quiz" />
             </div>
           </div>
         </div>
@@ -511,12 +532,35 @@ function App() {
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>CSS</li>
+                <li>Node</li>
               </ul>
               <span>
                 Apresentação de Currículo Interativo com formulário de contato,
                 opção para gerar um PDF do currículo e botões interativos que
                 direcionam para meu perfil no GitHub e LinkedIn.
               </span>
+            </div>
+          </div>
+        </div>
+        <div className="ProjectCard6">
+          <div className="Project6">
+            <div className="Project6Content">
+              <div className="projectContent-title">Jogo Mario Jump</div>
+              <ul>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Node</li>
+              </ul>
+              <span>
+                WebGame que utiliza JavaScript para aprimorar a interatividade
+                por meio da manipulação dinâmica do HTML. Para começar e superar
+                os desafios, basta pressionar a tecla de espaço.
+              </span>
+            </div>
+            <div>
+              <img className="Project4Img" src={superMario} alt="superMario" />
             </div>
           </div>
         </div>

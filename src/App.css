@@ -929,6 +929,16 @@ body {
     transform: translateY(0);
   }
 
+  .ProjectCard6 {
+    padding-top: 10px;
+    transform: translateY(380px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  .ProjectCard6.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* FIM  DIV PROJETOS */
   /* INICIO DIV PRIMEIRO PROJETO */
 
@@ -1363,6 +1373,91 @@ body {
 
 
  /* FIM DIV QUARTO PROJETO */
+
+ /* INICIO DIV SEIS PROJETO */
+
+
+.Project6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+ }
+
+ .Project6Img {
+  max-width: 550px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+.Project6Content {
+  align-items: center;
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 20px;
+} 
+
+
+ .Project6 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 00px;
+  margin: 10px 0;
+}
+
+.Project6 ul li {
+  cursor: default;
+  border-radius: 10px;
+  border: 1px solid var(--color-secondary-pink-regular, #B12FAE);
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  margin: 5px 5px 0 0;
+  color: var(--color-secondary-pink-regular, #B12FAE);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+ 
+.Project6Content span{
+  color: var(--color-primary-blue-regular, #2E3A72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 1060px) {
+  .Project6 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .ProjectCard6 {
+    padding-top: 0px;
+  }
+
+  .Project6Img {
+    /* margin-top: 12%; */
+    max-width: 320px;
+    flex-basis: 80%;
+    border: 1px solid #dddddd;
+  }
+  .Project6Content {
+    margin-left: 30px;
+    flex-basis: 80%;
+  }
+}
+
+ /* FIM DIV SEIS PROJETO */
 
  /*FOOTER FINAL*/
 
